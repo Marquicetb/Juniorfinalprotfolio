@@ -7,9 +7,9 @@ GLOBAL / RESET....
 
 body {
   margin: 0;
-  font-family: 'Montserrat', Arial, sans-serif;
-  background-image: linear-gradient(180deg, #fdd3ff, #c10eb5, #85058a,#3d0038);
-  color: #ffffff;
+  font-family: 'Montserrat', fantasy,sans-serif;
+  background-image: linear-gradient(180deg, #0d522d, #39d1a9, #005e45,#000d06);
+  color: white;
   background-size: cover;
   background-repeat: repeat-y;
   background-attachment: fixed;
@@ -19,8 +19,8 @@ body {
 NAVBAR
 ========================= */
 .navbar {
-  background-image: linear-gradient(180deg,#3d003d,#85058a,  #c10eb5,#fdd3ff);
-  padding: 1em 2em;
+  background-image: linear-gradient(0deg,#076b51, #005e45, #014734,#001815);
+  padding: 1em 2em 1em 2em;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -33,7 +33,7 @@ NAVBAR
 .navbar-right {
   list-style: none;
   display: flex;
-  gap: 2em;
+  padding: inherit;
   margin: 0;
   padding: 0;
 }
@@ -45,7 +45,7 @@ NAVBAR
 }
 
 .navbar-right a:hover {
-  color: #aaaaff;
+  color: #66f0c0;
 }
 
 /* =========================
@@ -53,7 +53,7 @@ PAGE LAYOUT
 ========================= */
 .home-card {
   max-width: 1200px;
-  margin: 2em auto;
+  margin: 2px;
   padding: 1em;
 }
 
@@ -61,11 +61,11 @@ PAGE LAYOUT
 CARDS
 ========================= */
 .resource-card {
-  background-color: #570949;
+  background-color: #0bd9a2;
   margin: 2em auto;
-  padding: 1.5em;
-  border-radius: 25px;
-  box-shadow: 0 0 16px #ffc4ff;
+  padding: 1.5%;
+  border-radius: 6px;
+  box-shadow: 0 0 19px #8ae9cc;
 }
 
 /* =========================
@@ -82,7 +82,7 @@ BIO SECTION
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 3px solid #ff00c8;
+  border: 3px solid #8effec;
   object-fit: cover;
 }
 
@@ -91,9 +91,9 @@ BIO SECTION
 }
 
 .bio-text h4 {
-  margin-top: 0;
+  margin-top: 0px;
   font-weight: normal;
-  color: #f2ccff;
+  color: #ffffff;
 }
 
 /* =========================
@@ -101,7 +101,7 @@ PROJECT LAYOUT
 ========================= */
 .project {
   display: flex;
-  gap: 1.5em;
+  padding: inherit;
   align-items: flex-start;
 }
 
@@ -110,34 +110,74 @@ PROJECT LAYOUT
   min-width: 320px;
   height: 450px;
   border: none;
-  background-color: rgb(52, 3, 52);
+  background-color: rgba(10, 132, 255, 0.33);
   border-radius: 8px;
 }
 
-.reflection {
-  flex: 1;
-  background-color: rgba(191, 15, 179, 0.33);
-  padding: 1em;
-  border-radius: 8px;
+/* Dropdown container */
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
-.reflection h3 {
-  margin-top: 0;
-  color: #ffffff;
+/* Dropdown button */
+.dropbtn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  color: #7c0000;
+  padding: 10px 15px;
+  display: inline-block;
 }
 
-.reflection p {
-  font-size: 0.95em;
-  color: #ffffff;
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  display: none;
+  position: absolute;
+  background-color: #096f54; 
+  min-width: 160px;
+  box-shadow: 0px 8px 16px #a6ffe7;
+  z-index: 1;
 }
 
+/* Dropdown links */
+.dropdown-content li a {
+  color: #a6ffe7;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Hover effect */
+.dropdown-content li a:hover {
+  background-color: #005e45;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Optional: change button color on hover */
+.dropdown:hover .dropbtn {
+  background-color: #005e45;
+}
 /* =========================
 LINKS / ICONS
 ========================= */
 .skill-images {
   display: flex;
   justify-content: center;
-  gap: 1.5em;
+  padding: inherit;
   margin-top: 1em;
 }
 
@@ -163,7 +203,7 @@ FOOTER
 footer {
   text-align: center;
   font-size: 0.85em;
-  color: #cccccc;
+  color: white;
 }
 
 /* =========================
@@ -184,7 +224,7 @@ RESPONSIVE
 @media (max-width: 600px) {
   .navbar {
     flex-direction: column;
-    gap: 1em;
+    padding: inherit;
   }
 
   .navbar-right {
