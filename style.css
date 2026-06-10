@@ -14,7 +14,7 @@ body {
   background-attachment: fixed;
   color: #060035; /* darker text for readability */
 }
-}
+
 /* =========================
 NAVBAR
 ========================= */
@@ -24,8 +24,8 @@ NAVBAR
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-radius: 46px 
-  shadow: 0 12px 8px #001b4c; 
+  border-radius: 46px ;
+  box-shadow: 0 12px 8px #001b4c; 
 
 }
 
