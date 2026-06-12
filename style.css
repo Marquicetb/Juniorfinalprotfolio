@@ -12,7 +12,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  color: #060035; /* darker text for readability */
+  color: #030018; /* darker text for readability */
 }
 
 /* =========================
@@ -24,8 +24,8 @@ NAVBAR
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-radius: 46px ;
-  box-shadow: 0 12px 8px #001b4c; 
+  border-radius: 46px; 
+    box-shadow: 0 12px 8px #001b4c; 
 
 }
 
@@ -69,14 +69,14 @@ CARDS
   margin: 2em auto;
   padding: 1.5%;
   border-radius: 6px;
-  box-shadow: 0 0 19px #222;
+  box-shadow: 0 0 19px #2e2d23;
   color: black;
 }
 .picture img {
   width: 150px;
   height: 150px;
   border-radius: 20px;
-  border: 4px solid #39d1a9;
+  border: 4px solid #00da9a;
   object-fit: cover;
 }
 
